@@ -1,0 +1,10 @@
+﻿priority_rank,Category,SalesChannel,records,orders,units,gross_sales,returned_amount,net_sales,returned_records,return_rate_pct,average_order_value
+1,Home & Garden,In-Store,118,118,351,140672.83,52909.39,87763.44,53,44.92,1192.14
+2,Electronics,In-Store,121,121,383,158549.84,74284.36,84265.48,59,48.76,1310.33
+3,Fashion,Mobile App,131,131,397,167679.44,87672.87,80006.57,68,51.91,1280.00
+4,Fashion,Website,112,112,344,161321.82,83604.72,77717.10,61,54.46,1440.37
+5,Electronics,Mobile App,108,108,323,152164.20,78806.27,73357.93,54,50.00,1408.93
+6,Fashion,In-Store,100,100,296,122213.24,54506.78,67706.46,50,50.00,1222.13
+7,Home & Garden,Website,104,104,323,132400.53,64723.54,67676.99,55,52.88,1273.08
+8,Electronics,Website,107,107,337,129756.20,73225.86,56530.34,59,55.14,1212.67
+9,Home & Garden,Mobile App,99,99,315,115987.45,73969.23,42018.22,57,57.58,1171.59

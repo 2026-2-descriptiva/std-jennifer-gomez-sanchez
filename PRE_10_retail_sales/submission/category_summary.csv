@@ -1,0 +1,4 @@
+﻿Category,records,orders,units,gross_sales,returned_amount,net_sales,returned_records,return_rate_pct,average_order_value
+Fashion,343,343,1037,451214.50,225784.37,225430.13,179,52.19,1315.49
+Electronics,336,336,1043,440470.24,226316.49,214153.75,172,51.19,1310.92
+Home & Garden,321,321,989,389060.81,191602.16,197458.65,165,51.40,1212.03

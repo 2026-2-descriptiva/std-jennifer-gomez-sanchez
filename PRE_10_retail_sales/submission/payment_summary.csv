@@ -1,0 +1,4 @@
+﻿PaymentMethod,records,orders,units,gross_sales,returned_amount,net_sales,returned_records,return_rate_pct,average_order_value
+PayPal,346,346,1050,450827.44,223727.53,227099.91,170,49.13,1302.97
+Credit Card,343,343,1035,411241.94,185103.03,226138.91,170,49.56,1198.96
+Cash,311,311,984,418676.17,234872.46,183803.71,176,56.59,1346.23

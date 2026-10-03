@@ -1,0 +1,2 @@
+﻿records,orders,customers,products,units,gross_sales,returned_amount,net_sales,returned_records,return_rate_pct,average_order_value
+1000,1000,428,371,3069,1280745.55,643703.02,637042.53,516,51.60,1280.75
