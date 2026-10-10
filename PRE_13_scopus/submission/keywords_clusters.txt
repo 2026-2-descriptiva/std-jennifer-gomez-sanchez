@@ -1,0 +1,1429 @@
+Método: comunidades por modularidad greedy ponderada.
+Peso: cantidad de documentos compartidos.
+
+Cluster 1 (237 términos)
+  - absorptive capacity
+  - activities
+  - adoption
+  - ahp
+  - ai adoption
+  - ai integration
+  - ai intelligent matching system
+  - application integration
+  - aquaculture land price
+  - artificial intelligence
+  - astm
+  - augmented reality
+  - automated payments
+  - automated valuation models
+  - avm
+  - awareness
+  - bibliometric
+  - bibliometrics
+  - big data
+  - big data analytics
+  - big social data
+  - blockchain
+  - blockchain technology
+  - branding
+  - brokerage
+  - building
+  - building operation
+  - built environment
+  - business framework
+  - categories
+  - cloud computing
+  - clusters
+  - commercial real estate
+  - company financing
+  - composite materials
+  - construction
+  - construction 4.0
+  - constructive simulation
+  - contech
+  - contract management
+  - conveyancing
+  - corporate digital responsibility
+  - covid-19 pandemic
+  - coworking
+  - crowdfunding
+  - cryptocurrency
+  - customer-centric innovation
+  - cybersecurity
+  - data integration
+  - data management
+  - database
+  - decentralized application
+  - development
+  - digital
+  - digital business
+  - digital divide
+  - digital geography
+  - digital identity
+  - digital operations
+  - digital property management
+  - digital real estate platform
+  - digital technology
+  - digital technology adoption
+  - digital transformation
+  - digital-marketing
+  - digitalization
+  - disintermediation
+  - dispossession
+  - document verification
+  - drivers and barriers
+  - emerging markets
+  - environmental sustainability
+  - ethereum request for comment (erc)-721
+  - experiment, regret aversion
+  - experts
+  - explore and exploit
+  - facility management
+  - factors influencing
+  - finance
+  - fintech
+  - fraud detection
+  - future of real estate
+  - geo-spatial analysis
+  - gis integration
+  - gis mapping
+  - governance
+  - hazards model with splines
+  - head-tracking device
+  - housing
+  - housing management
+  - housing strategy
+  - hyperledger fabric
+  - hyperlocality
+  - ibuyer
+  - immersive time
+  - india
+  - industrial real estate
+  - industry 4.0
+  - inequalities
+  - information economic management
+  - information system
+  - information technology
+  - infrastructure
+  - innovation
+  - institutional investment
+  - insurtech
+  - internet of everything (ioe)
+  - internet of things
+  - internet of things (iot)
+  - interplanetary file system
+  - invest-tech
+  - iot
+  - ipfs
+  - ipo success factors
+  - iso
+  - it
+  - italy
+  - james graaskamp
+  - land fraud prevention
+  - land prediction
+  - land registration
+  - land registry
+  - land transactions
+  - law
+  - lease agreement
+  - logistics
+  - logit regression
+  - machine learning
+  - management
+  - market transparency
+  - metamask
+  - metaverse
+  - metaverse model house(mmh)
+  - nace
+  - national land numerical information
+  - new technologies law
+  - non fungible tokens
+  - o2o
+  - office space
+  - online brokerage
+  - online home tours
+  - p2p accommoda-tion
+  - p2p lending
+  - paradigm
+  - paradox of innovation
+  - pbft
+  - platform state
+  - pop-ups
+  - postcolonial urbanism
+  - pricing strategies
+  - private equity
+  - private rental sector
+  - products
+  - prop-tech
+  - property
+  - property management
+  - property marketing chain
+  - property passport
+  - property technology
+  - proptech
+  - public-private
+  - purchase
+  - quantile regression
+  - racial capitalism
+  - real estate
+  - real estate 4.0
+  - real estate agent
+  - real estate asset
+  - real estate industry
+  - real estate innovation
+  - real estate investments
+  - real estate leasing
+  - real estate market
+  - real estate profession
+  - real estate sector
+  - real estate technology
+  - real estate transactions
+  - real estate websites
+  - real estate-management
+  - regtech
+  - remote work
+  - rent prediction
+  - rental
+  - rental price
+  - rental sector
+  - research
+  - research agenda
+  - retails
+  - right to privacy
+  - risk management
+  - self-regulation
+  - service quality
+  - shap value
+  - short-term rental market
+  - simulation
+  - smart building
+  - smart cities
+  - smart contract design
+  - smart contract implementation
+  - smart contracts
+  - smart real estate management
+  - south africa
+  - standardization
+  - statistics
+  - strategic management practices
+  - structural topic modelling
+  - supply chain
+  - supply–demand alignment
+  - survival analysis
+  - sustainability
+  - sustainability performance
+  - sustainable development goals
+  - systematic literature review
+  - technology
+  - technology disruption
+  - theory
+  - tokenization
+  - tourism 4.0
+  - transparency
+  - uncertainty
+  - unity engine
+  - urban governance
+  - urban property
+  - urban real estate valuation
+  - user experience
+  - user experience differences
+  - vacancy duration
+  - value
+  - venture capital
+  - vietnam proptech
+  - virtual gathering
+  - virtual reality
+  - vuca
+  - web 3.0
+  - web application
+  - workplace planning
+  - zkp
+
+Cluster 2 (83 términos)
+  - advocacy
+  - algorithmic pricing
+  - australia
+  - behaviors
+  - biotechnology
+  - challenges
+  - china
+  - curriculum development
+  - digital labour
+  - digital real estate
+  - digital technologies
+  - digitization
+  - discretion
+  - discrimination
+  - document management
+  - document processing
+  - education
+  - entrepreneurs
+  - epistemic engulfment
+  - financeirização
+  - financialisation
+  - financialization
+  - financiarisation
+  - financiarización
+  - forecasting
+  - gaming
+  - gender
+  - geodatabase
+  - habi-tação alugada
+  - healthcare
+  - housing affordability
+  - housing inequality
+  - integration
+  - integration of data
+  - logement en location
+  - market sociology
+  - mexico
+  - mexique
+  - méxico
+  - network state
+  - nft
+  - non-fungible tokens (nfts)
+  - plataforma digital
+  - plataformas digitais
+  - plateforme numérique
+  - platform capitalism
+  - platform real estate
+  - platform renting
+  - platforms
+  - private ownership
+  - private rental market
+  - private renting
+  - property academics
+  - property graduates
+  - property manager
+  - propiedad privada
+  - propriedade privada
+  - propriété privée
+  - r&d management
+  - real estate management
+  - rental housing
+  - rented housing
+  - rentier capitalism
+  - renting
+  - reputation
+  - research scholar
+  - retail investors
+  - secondary property ownership
+  - semantic web
+  - share housing
+  - shared housing
+  - spatial data warehouse
+  - stakeholders
+  - strategies
+  - tenants
+  - trust management
+  - uae
+  - urban geography
+  - urban knowledge
+  - urban political economy
+  - virtual land
+  - vivienda alquilada
+  - work readiness
+
+Cluster 3 (74 términos)
+  - accountability
+  - advertising
+  - ai
+  - algorithms
+  - ambience
+  - architectural layout
+  - automation
+  - blockchain applications
+  - business
+  - business history
+  - consumer perceptions
+  - corporate real estate
+  - cost savings
+  - cryptocurrencies
+  - cryptopayments
+  - customer services quality
+  - customer-centric
+  - data
+  - data analytics
+  - decisions
+  - dielectric properties
+  - digital financial assets
+  - digital monetizable assets
+  - digital platforms
+  - douyin
+  - efficiency
+  - financial inclusion
+  - fintech sector
+  - grey wolf optimizer
+  - hospitality
+  - hospitality innovations
+  - hospitality trends
+  - hotel technology
+  - hotels
+  - housing discrimination
+  - housing financialisation
+  - hybrid work
+  - inequity
+  - information economy
+  - iteratively retains informative variables
+  - local authorities
+  - malaysia
+  - models
+  - moisture
+  - moisture content
+  - monitoring and controlling system
+  - nfts
+  - ni labview
+  - ni myrio
+  - office
+  - online travel agencies
+  - optimisation
+  - organizational characteristics
+  - postindustrial society
+  - real estate reputation
+  - regulatory compliance
+  - sensors
+  - service levels
+  - servqual
+  - shariah compliance fintech
+  - socio-spatial
+  - stakeholder management
+  - succession planning
+  - sustainable development
+  - tenant screening
+  - tomato leaves
+  - traveltech
+  - trends
+  - trends in hospitality
+  - wealth planning
+  - working from home
+  - workplace
+  - workspace
+  - workspace management
+
+Cluster 4 (67 términos)
+  - agricultural development
+  - agricultural research
+  - ai-driven application
+  - ai-driven decision support systems
+  - artificial intelligence (ai) technologies
+  - bibliometric analysis
+  - business model
+  - carbon capture and storage
+  - case study
+  - ccs patent
+  - cities
+  - city planning
+  - climate change
+  - climate finance
+  - climate justice
+  - climate law
+  - closed-property technology
+  - commons
+  - compact city
+  - construction process automation
+  - deep learning
+  - deep learning for property valuation
+  - diffusion of innovation
+  - diplomacy
+  - emerging economies
+  - entrepreneurship
+  - future research
+  - geospatial analysis
+  - geospatial data analytics
+  - green climate fund
+  - hedonic pricing
+  - indoor environmental quality (ieq)
+  - innovation law
+  - innovation policy
+  - intellectual property
+  - international law
+  - ip management
+  - location normalization plan
+  - low-cost sensors
+  - mobile operating systems
+  - open innovation
+  - open source technology
+  - organization
+  - patent commercialization
+  - personalized recommendations
+  - predictive analytics in real estate
+  - price prediction
+  - real estate price prediction
+  - real estate valuation
+  - reduce co<sub>2</sub> emission
+  - rental market
+  - research management
+  - scientific collaboration networks
+  - sentiment analysis
+  - sky view factor
+  - smart real estate technologies
+  - startups
+  - systematic literature review (slr)
+  - technology developing
+  - technology transfer
+  - the paris agreement 2015
+  - unfccc climate technology centre and network
+  - universities
+  - university
+  - university entrepreneurship
+  - university innovation
+  - urban
+
+Cluster 5 (55 términos)
+  - advertising keywords
+  - atributos da habitação
+  - atributos de la vivienda
+  - brand
+  - building information modeling
+  - business contmuity
+  - consumer happiness
+  - cost approach
+  - covid-19
+  - developer brand
+  - digital marketing strategies
+  - digital real estate transformation framework (dretf)
+  - distributed systems
+  - effectiveness factors
+  - european stock markets
+  - event study
+  - exogenous shock
+  - felicidad del consumidor
+  - felicidade do consumidor
+  - generative ai
+  - geographic information system
+  - geographic information systems
+  - hedging strategies
+  - high-frequency data
+  - housing attributes
+  - igital teclmology
+  - information communication technology
+  - innovación tecnológica
+  - inovação tecnológica
+  - intención de compra inmobiliaria
+  - intenção de compra imobiliária
+  - internet communication technology
+  - local public health risk
+  - marca
+  - marca del promotor
+  - marca do incorporador
+  - model construction
+  - natural language processing
+  - non-urban area
+  - oil
+  - online listing
+  - pls-sem
+  - precio
+  - preço
+  - price
+  - real estate agencies
+  - real estate appraisal
+  - real estate digitalisation
+  - real estate purchase intention
+  - russia-ukraine war
+  - smart city
+  - smart village
+  - spillover
+  - technological innovation
+  - technology demand of life service
+
+Cluster 6 (54 términos)
+  - a disruption of property technology
+  - ai-driven decision making
+  - ai-integration
+  - ai-powered risk assessment
+  - artificial intelligence (ai)
+  - automated valuation models (avms)
+  - big9 disruptive technologies
+  - business transformation tool
+  - challenges to adoption
+  - change management
+  - customer house-buying behavior
+  - customer satisfaction
+  - data governance
+  - data-driven
+  - decision making
+  - decision regrets
+  - digital buildings
+  - digital economy
+  - disruptive digital technologies (ddts
+  - environmental social and governance (esg) performance
+  - human-technology interaction
+  - innovative technology
+  - kano model
+  - landlord
+  - lease contract
+  - legal framework
+  - legislative innovation
+  - natural language processing (nlp)
+  - non-adoption
+  - online technology dissemination platforms
+  - organisational change
+  - passive optical network (pon)
+  - pest framework
+  - portfolio optimisation
+  - predictive analytics
+  - prisma
+  - professional competence
+  - property technology (proptech)
+  - pythagorean fuzzy
+  - real estate online platforms
+  - real estate technologies
+  - retech
+  - rstudio
+  - sisqual approach
+  - smart real estate
+  - smart real estate (sre)
+  - smart real estate management (srem)
+  - systematic review
+  - tacit renewal
+  - technology acceptance model
+  - technology adoption
+  - technology adoption barriers innovation
+  - tenant
+  - users’ perception
+
+Cluster 7 (18 términos)
+  - ballistic modeling
+  - charge
+  - continuous
+  - grain
+  - gun
+  - inhibition
+  - insensitive munitions
+  - manufacture
+  - minimum smoke
+  - missile
+  - nitrocellulose
+  - propellant
+  - pyrogen
+  - reach
+  - shear roll milling
+  - solid rocket mo-tor
+  - solventless double base
+  - twin-screw extrusion
+
+Cluster 8 (17 términos)
+  - barriers
+  - clients influence
+  - fta–dematel–ism
+  - nigeria
+  - on-line real estate brokerage
+  - operations management
+  - property valuation
+  - property valuer
+  - property valuers
+  - prospects
+  - qualitative research
+  - real estate enterprise
+  - regulations
+  - start-ups
+  - technology acceptance
+  - traditional agency
+  - valuation process
+
+Cluster 9 (16 términos)
+  - clustering algorithm
+  - data analysis
+  - decision tree
+  - financial market
+  - lasso regression
+  - linear regression
+  - macd
+  - ml
+  - prediction
+  - random forest regressor
+  - rsi
+  - sma
+  - support vector machine
+  - svm
+  - technical analysis indicators
+  - trading
+
+Cluster 10 (15 términos)
+  - business ecosystem
+  - cluster
+  - collective consciousness
+  - conceptual analysis
+  - electric vehicles
+  - experiments
+  - industry
+  - network
+  - niche
+  - pilots
+  - smart grids
+  - transitions
+  - transport
+  - upscale
+  - value network
+
+Cluster 11 (14 términos)
+  - cafm/iwms
+  - commodification
+  - computer networks
+  - counter-cartography
+  - cyber security
+  - digitalisation
+  - gentrification
+  - maps
+  - network facility management (nfm)
+  - network management systems (nms)
+  - post-socialist city
+  - race
+  - re and fm
+  - temporality
+
+Cluster 12 (12 términos)
+  - antioxidants
+  - bioactive compounds
+  - cactus pear
+  - encapsulation
+  - extraction methods
+  - functional foods
+  - health-promoting compounds
+  - phenolic compounds
+  - phytochemicals
+  - post-harvest
+  - prickly pear
+  - tocotrienols
+
+Cluster 13 (11 términos)
+  - alternative sourcing models
+  - broker
+  - digital investments
+  - digital real estate industry
+  - e-mail
+  - earnings
+  - income
+  - internet
+  - mortgage brokerage
+  - realtors
+  - web
+
+Cluster 14 (11 términos)
+  - avatar
+  - build to rent
+  - interface
+  - landlords
+  - metaverse marketing
+  - online gaming
+  - platform
+  - playstation
+  - teleporting
+  - virtual game
+  - xbox
+
+Cluster 15 (11 términos)
+  - catalysis
+  - cloud
+  - ionic liquids
+  - morphing
+  - nanomaterials
+  - scale-up technologies
+  - separation techniques
+  - sequence
+  - synthesis
+  - tour
+  - toxicity
+
+Cluster 16 (10 términos)
+  - absorption dichroism
+  - anisotropy
+  - birefringence
+  - dichroism
+  - liquid crystals
+  - luminescence anisotropy
+  - lyotropic liquid crystals
+  - metal grid polarizer
+  - photoalignment
+  - thin film polarizers
+
+Cluster 17 (10 términos)
+  - ai tools
+  - ai-based systems
+  - edutech (education + technology)
+  - fintech (finance + technology)
+  - green + technology)
+  - greentech (sustainability
+  - insurtech (insurance + technology)
+  - proptech (property + technology)
+  - regtech (regulation + technology)
+  - wealthtech (wealth + technology)
+
+Cluster 18 (9 términos)
+  - "tramponomics"
+  - external economic relations
+  - national interest
+  - protectionism
+  - protective measures
+  - trade liberalization agreements
+  - trade policy
+  - trade wars
+  - united states
+
+Cluster 19 (9 términos)
+  - co-design
+  - environment
+  - epu
+  - esg
+  - property education
+  - property industry 4.0
+  - property professional
+  - real estate education
+  - society
+
+Cluster 20 (9 términos)
+  - ejb
+  - geoai
+  - gis
+  - j2ee
+  - ladm
+  - mass appraisal
+  - real estate surveying
+  - uml
+  - valuation information
+
+Cluster 21 (9 términos)
+  - equipment
+  - incentive
+  - intellectual property right
+  - optimization
+  - p-graph
+  - royalty
+  - sustainable process design
+  - technology model
+  - water
+
+Cluster 22 (8 términos)
+  - "floating" ("rigid") skeleton
+  - ceramic refractory material
+  - corrosion-erosion resistance
+  - fragmentary structure
+  - highly concentrated binder suspension (hcbs)
+  - melting and casting crucibles (technology)
+  - sol-gel process
+  - temporary production binder (tpb)
+
+Cluster 23 (8 términos)
+  - acoustic classification
+  - bathymetric changes
+  - dslp-technology
+  - echo-sounder
+  - fluid-solid interface
+  - near-bottom sediment transport
+  - promorph
+  - suspension concentration
+
+Cluster 24 (8 términos)
+  - ceramics
+  - dispersion
+  - energy saving
+  - gas
+  - gas-liquid reactors
+  - mixing
+  - permeable
+  - porous
+
+Cluster 25 (7 términos)
+  - agile development
+  - cloud-native
+  - devops
+  - fault tolerance
+  - large language model (llm)
+  - microservices
+  - software architecture
+
+Cluster 26 (7 términos)
+  - agro-food industrie
+  - biocide
+  - disinfection
+  - in situ generated biocide
+  - ozone
+  - ozone sanitation
+  - ozone standard and dosage
+
+Cluster 27 (7 términos)
+  - art
+  - attitudes
+  - culture
+  - locus of control
+  - longitudinal study
+  - self-determination theory
+  - survey study
+
+Cluster 28 (7 términos)
+  - cardiovascular models
+  - implants
+  - personalized medicine
+  - programmable materials
+  - regenerative medicine
+  - scaffold
+  - tissue engineering
+
+Cluster 29 (7 términos)
+  - chaa
+  - cv
+  - dsrc/wave
+  - road hazard
+  - road safety
+  - v2i
+  - v2v
+
+Cluster 30 (7 términos)
+  - cluster trajectory
+  - clustering
+  - financial crises
+  - fund performance
+  - market dynamics
+  - portfolio diversification and optimization
+  - portfolio hamming index
+
+Cluster 31 (7 términos)
+  - cre
+  - ethereum
+  - initial coin offering
+  - investing
+  - ledger
+  - token
+  - transactions
+
+Cluster 32 (7 términos)
+  - drone video
+  - house prices
+  - price discovery
+  - sales probability
+  - time-on-market
+  - virtual tour
+  - visual technology
+
+Cluster 33 (7 términos)
+  - innovation resistance
+  - is success model
+  - personalization
+  - service business ecosystem
+  - service platform
+  - service standardization
+  - vam
+
+Cluster 34 (6 términos)
+  - 3d printing
+  - additive manufacture
+  - consumer electronics
+  - flexible printed electronics
+  - functional device
+  - liquid metal
+
+Cluster 35 (6 términos)
+  - affiliate program
+  - application programming interface (api)
+  - channel manager
+  - inventory
+  - online travel agency (ota)
+  - white label
+
+Cluster 36 (6 términos)
+  - affordable housing
+  - hpi
+  - mortgage
+  - social housing
+  - sukuk
+  - türkiye
+
+Cluster 37 (6 términos)
+  - allergenic foods
+  - food safety
+  - genetically engineered foods
+  - genetically modified foods
+  - public concerns
+  - transgenic foods
+
+Cluster 38 (6 términos)
+  - asset management portal
+  - brand consistency
+  - development accelerator
+  - human-centred artificial intelligence (ai)
+  - point cloud processing
+  - revit model creator
+
+Cluster 39 (6 términos)
+  - authenticity
+  - influencers
+  - opinion leader
+  - political communication
+  - politics
+  - social media
+
+Cluster 40 (6 términos)
+  - bending resistance
+  - bending, compressive strength
+  - ductility
+  - high performance concrete
+  - high strength concrete
+  - reinforced concrete elements
+
+Cluster 41 (6 términos)
+  - business strategy components
+  - dual-function materials
+  - energy storage systems
+  - intelligence networks
+  - mining industry
+  - supply chain redesign
+
+Cluster 42 (6 términos)
+  - carbon fibers
+  - chemical properties
+  - irradiation
+  - mechanical properties
+  - stabilization
+  - strength
+
+Cluster 43 (6 términos)
+  - demand balancing
+  - house rental marketplace
+  - learning to rank
+  - ranking
+  - single-unit inventory ranking
+  - two-sided marketplace
+
+Cluster 44 (6 términos)
+  - digital platform
+  - property information
+  - property price
+  - real estate platform
+  - signals
+  - zillow
+
+Cluster 45 (5 términos)
+  - achievement transformation
+  - expert consensus
+  - public data
+  - scientific data
+  - technological achievements
+
+Cluster 46 (5 términos)
+  - actor-driven disruption
+  - future scenarios
+  - heat and water recovery
+  - system modelling
+  - urban energy policy
+
+Cluster 47 (5 términos)
+  - aluminium alloys
+  - fea method
+  - heat exchanger
+  - hybrid solar collector
+  - pressure forming
+
+Cluster 48 (5 términos)
+  - anaerobic digestion
+  - composting
+  - incineration
+  - kitchen waste
+  - landfills
+
+Cluster 49 (5 términos)
+  - apartment auction
+  - international exchange complex (iec)
+  - policy regulation
+  - spatial econometric model
+  - winning bid rate
+
+Cluster 50 (5 términos)
+  - autoethnography
+  - hauntology
+  - place
+  - provocation
+  - psychogeography
+
+Cluster 51 (5 términos)
+  - biodiesel synthesis
+  - energy recovery
+  - transesterification
+  - valorization
+  - waste cooking oil
+
+Cluster 52 (5 términos)
+  - bioethics
+  - biological samples
+  - biomaterial
+  - open data
+  - scientific cooperation
+
+Cluster 53 (5 términos)
+  - caking mechanism
+  - caking property
+  - evaluation indexes
+  - regulation technologies
+  - weakly caking coal
+
+Cluster 54 (5 términos)
+  - capital asset pricing model
+  - economic rent
+  - ftse 100
+  - price markup
+  - tobin’s q
+
+Cluster 55 (5 términos)
+  - carbon emissions
+  - energy
+  - spatial effect
+  - spatial lag model
+  - stirpat
+
+Cluster 56 (5 términos)
+  - chemical and thermal strengthening
+  - high index
+  - ophthalmic lenses
+  - photochromic.
+  - uv filtering
+
+Cluster 57 (5 términos)
+  - cold temper rolling
+  - elongation control
+  - minimum roll force
+  - soft steel
+  - temper roll force calculation
+
+Cluster 58 (5 términos)
+  - computer vision
+  - evolutionary computation
+  - genetic programming
+  - image enhancement
+  - image processing
+
+Cluster 59 (5 términos)
+  - cost of capital
+  - financial risk
+  - integrated reporting
+  - integrated thinking
+  - liquidity
+
+Cluster 60 (5 términos)
+  - crypto hacker attacks
+  - market efficiency
+  - market liquidity
+  - real estate token
+  - volatility spillover effect
+
+Cluster 61 (5 términos)
+  - decision and optimal selection
+  - internal combustion engine waste heat
+  - multifactor evaluation index
+  - organic rankine cycle(orc)
+  - three-level evaluation method
+
+Cluster 62 (5 términos)
+  - decision-making behavior
+  - digital real-estate marketing
+  - immersive environments
+  - user-centered design
+  - virtual housing environments
+
+Cluster 63 (5 términos)
+  - dietary fiber
+  - nutraceuticals
+  - polyphenol
+  - proanthrocyanidins
+  - vitamins
+
+Cluster 64 (5 términos)
+  - effectiveness
+  - entertainment
+  - informativeness
+  - millennial intention
+  - stimulus-organism response (sor) model
+
+Cluster 65 (5 términos)
+  - hedonic model
+  - online search
+  - operational real estate
+  - pbsa
+  - purpose-built student accommodation
+
+Cluster 66 (5 términos)
+  - holographic optical element
+  - ion exchange
+  - photo-thermo-refractive glass
+  - photochemical etching
+  - volume bragg grating
+
+Cluster 67 (5 términos)
+  - housing precarity
+  - mould
+  - renoviction
+  - rental disputes
+  - tenant rights
+
+Cluster 68 (5 términos)
+  - in-situ and continuous
+  - monitoring
+  - plant health information
+  - precision agriculture
+  - wearable sensors
+
+Cluster 69 (5 términos)
+  - international frameworks
+  - investment and financing
+  - new business models
+  - newspace
+  - strategy
+
+Cluster 70 (4 términos)
+  - (post)colonial property
+  - smart urbanism
+  - uneven development
+  - urban political ecology
+
+Cluster 71 (4 términos)
+  - acceleration
+  - downstream
+  - startup
+  - upstream
+
+Cluster 72 (4 términos)
+  - acceptance
+  - japan
+  - usage
+  - utaut
+
+Cluster 73 (4 términos)
+  - advanced producer services
+  - near real-time data
+  - technology space analysis
+  - world cities
+
+Cluster 74 (4 términos)
+  - agentic ai
+  - multi-agent collaboration
+  - reinforcement learning
+  - virtual staging
+
+Cluster 75 (4 términos)
+  - alon
+  - aluminum oxynitride
+  - light transmission
+  - transparent ceramics
+
+Cluster 76 (4 términos)
+  - apartment price prediction
+  - apartment valuation
+  - application of machine learning
+  - proptech segment
+
+Cluster 77 (4 términos)
+  - applicability
+  - evaluation
+  - index system
+  - material
+
+Cluster 78 (4 términos)
+  - autonomous vehicle
+  - fuzzy sets
+  - lateral and longitudinal control
+  - path-tracking
+
+Cluster 79 (4 términos)
+  - belt and road initiative
+  - benefit and risk
+  - energy sector
+  - foreign direct investment
+
+Cluster 80 (4 términos)
+  - benzo[a]pyrene
+  - degradation
+  - pathway
+  - polyaromatic hydrocarbons
+
+Cluster 81 (4 términos)
+  - bi<sup>3+</sup> doping
+  - fesmo<sub>3</sub>
+  - magnetic properties
+  - nanopowder
+
+Cluster 82 (4 términos)
+  - bioactivity
+  - medical implant
+  - osseointegration
+  - porous titanium
+
+Cluster 83 (4 términos)
+  - biosynthesis
+  - characterization and antibacterial activity
+  - lactobacillus plantarum
+  - znonps
+
+Cluster 84 (4 términos)
+  - blending
+  - bright yarn
+  - cationic polyester
+  - wool
+
+Cluster 85 (4 términos)
+  - buyer search activities
+  - house price
+  - housing search
+  - onsite house viewing
+
+Cluster 86 (4 términos)
+  - can field bus
+  - mcp2515
+  - microblaze
+  - sopc
+
+Cluster 87 (4 términos)
+  - chlorine dioxide savings
+  - ecf bleaching
+  - extremophilic xylanase
+  - kraft pulp
+
+Cluster 88 (4 términos)
+  - corn flour
+  - corn tortilla
+  - nixtamalization
+  - polluting effluents
+
+Cluster 89 (4 términos)
+  - corporate real estate technology
+  - iwms
+  - real estate compliance
+  - real estate data
+
+Cluster 90 (4 términos)
+  - covid19
+  - dashboards
+  - disasters
+  - real-estate market
+
+Cluster 91 (4 términos)
+  - cpu
+  - ddos attacks
+  - monitoring tools
+  - security
+
+Cluster 92 (4 términos)
+  - cre integrated technology
+  - cre operational model
+  - performance management
+  - target operating model
+
+Cluster 93 (4 términos)
+  - criteria for the ability to commercialize research products
+  - inner model test
+  - outer model test
+  - structural equation modeling (sem)
+
+Cluster 94 (4 términos)
+  - digital house
+  - integration mode
+  - spatio-temporal database
+  - the three-tier structure
+
+Cluster 95 (4 términos)
+  - digital information-seeking
+  - homebuyers
+  - real estate platforms
+  - taiwan
+
+Cluster 96 (4 términos)
+  - distributed hash table (dht)
+  - metadata
+  - peer-to-peer (p2p)
+  - resource sharing
+
+Cluster 97 (4 términos)
+  - elliptic curve cryptography
+  - information security
+  - privacy protection
+  - stealth address protocol
+
+Cluster 98 (4 términos)
+  - explorative case study
+  - service-dominant logic
+  - smart city competence
+  - technology-based self-service
+
+Cluster 99 (4 términos)
+  - extraction replica
+  - nonaqueous electrolytic extraction
+  - on-metallic inclusion
+  - synthetical characterization technology
+
+Cluster 100 (4 términos)
+  - fishing
+  - housing market
+  - ibuyers
+  - spillover effects
+
+Cluster 101 (4 términos)
+  - fruits and vegetables
+  - multi-technology integration
+  - optical property
+  - quality evaluation
+
+Cluster 102 (4 términos)
+  - home purchase decision-making process
+  - property marketing
+  - time on the market (tom)
+  - virtual reality (vr)
+
+Cluster 103 (4 términos)
+  - ip technology
+  - modeling method
+  - optical interconnection interface
+  - optoelectronic microsystem
+
+Cluster 104 (4 términos)
+  - mamquist productivity index
+  - operational status
+  - productivity improvement
+  - trend analysis
+
+Cluster 105 (4 términos)
+  - modified delphi method
+  - real estate sales
+  - technology management
+  - trend forecasting
+
+Cluster 106 (3 términos)
+  - big data/machine learning
+  - statistical methods
+  - topics: real estate
+
+Cluster 107 (3 términos)
+  - buyer-seller relationships
+  - construction works
+  - procurement
+
+Cluster 108 (3 términos)
+  - click prediction
+  - e-commerce
+  - sponsored advertising
+
+Cluster 109 (3 términos)
+  - environmental health
+  - occupational safety
+  - vocational schools
+
+Cluster 110 (3 términos)
+  - fatty acid
+  - oil foots
+  - soapstock
+
+Cluster 111 (3 términos)
+  - information extraction
+  - information retrieval and text mining
+  - nlp applications
+
+Cluster 112 (3 términos)
+  - open service innovation
+  - perceived service quality
+  - sari municipality
+
+Cluster 113 (3 términos)
+  - organizational alignment
+  - organizational structure
+  - pilot implementation
+
+Cluster 114 (2 términos)
+  - gene therapy
+  - nanoparticles

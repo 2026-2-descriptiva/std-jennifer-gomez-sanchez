@@ -1,0 +1,2 @@
+total_lines,country_count,shipment_mode_count,total_quantity,total_item_value_usd,total_freight_usd,total_weight_kg,total_insurance_usd,evaluated_delivery_count,unevaluated_delivery_count,late_line_count,on_time_rate_pct,average_delay_days,freight_numeric_count
+10324,43,4,189265090,1627584457.2900,68817849.4100,21820540,2410060.6100,10324,0,1186,88.5122,-6.0235,6198

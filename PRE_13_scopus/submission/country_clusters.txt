@@ -1,0 +1,119 @@
+Método: comunidades por modularidad greedy ponderada.
+Peso: cantidad de documentos compartidos.
+
+Cluster 1 (14 términos)
+  - Algeria
+  - Denmark
+  - Finland
+  - France
+  - Japan
+  - Jordan
+  - Lebanon
+  - Mexico
+  - Morocco
+  - Oman
+  - Pakistan
+  - Portugal
+  - Spain
+  - Tunisia
+
+Cluster 2 (14 términos)
+  - Australia
+  - Bulgaria
+  - China
+  - Cyprus
+  - Hong Kong
+  - Ireland
+  - Malaysia
+  - Materials Characterization Research Group
+  - Netherlands
+  - New Zealand
+  - Nigeria
+  - South Africa
+  - United Kingdom
+  - United States
+
+Cluster 3 (9 términos)
+  - Canada
+  - Egypt
+  - Germany
+  - India
+  - Saudi Arabia
+  - Singapore
+  - South Korea
+  - Thailand
+  - Vietnam
+
+Cluster 4 (5 términos)
+  - Austria
+  - Israel
+  - Italy
+  - Norway
+  - Sweden
+
+Cluster 5 (3 términos)
+  - Belarus
+  - Hungary
+  - North Macedonia
+
+Cluster 6 (3 términos)
+  - Iran
+  - Palestine
+  - United Arab Emirates
+
+Cluster 7 (2 términos)
+  - Belgium
+  - Greece
+
+Cluster 8 (2 términos)
+  - Kazakhstan
+  - Ukraine
+
+Cluster 9 (2 términos)
+  - Lithuania
+  - Poland
+
+Cluster 10 (1 términos)
+  - Bahrain
+
+Cluster 11 (1 términos)
+  - Brazil
+
+Cluster 12 (1 términos)
+  - Colombia
+
+Cluster 13 (1 términos)
+  - Costa Rica
+
+Cluster 14 (1 términos)
+  - Croatia
+
+Cluster 15 (1 términos)
+  - Indonesia
+
+Cluster 16 (1 términos)
+  - Iraq
+
+Cluster 17 (1 términos)
+  - Philippines
+
+Cluster 18 (1 términos)
+  - Romania
+
+Cluster 19 (1 términos)
+  - Russia
+
+Cluster 20 (1 términos)
+  - Serbia
+
+Cluster 21 (1 términos)
+  - Slovakia
+
+Cluster 22 (1 términos)
+  - Slovenia
+
+Cluster 23 (1 términos)
+  - Taiwan
+
+Cluster 24 (1 términos)
+  - Turkey
