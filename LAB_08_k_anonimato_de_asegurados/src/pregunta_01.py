@@ -80,4 +80,84 @@ def pregunta_01():
         }
     """
 
-    raise NotImplementedError
+    import json
+    from pathlib import Path
+
+    import pandas as pd
+
+    k = 5
+    df = pd.read_csv("data/insurance.csv.gz")
+
+    original_qi = ["age", "sex", "bmi", "children", "region"]
+    original_sizes = df.groupby(original_qi)["charges"].transform("size")
+
+    df["age_group"] = pd.cut(
+        df["age"],
+        bins=[17, 29, 39, 49, 64],
+        labels=["18-29", "30-39", "40-49", "50-64"],
+    ).astype(str)
+    df["bmi_group"] = pd.cut(
+        df["bmi"],
+        bins=[-float("inf"), 18.5, 25, 30, float("inf")],
+        labels=["bajo peso", "normal", "sobrepeso", "obesidad"],
+        right=False,
+    ).astype(str)
+    df["children_group"] = pd.cut(
+        df["children"],
+        bins=[-1, 0, 2, float("inf")],
+        labels=["0", "1-2", "3+"],
+    ).astype(str)
+
+    schemes = {
+        "with_children": ["age_group", "sex", "bmi_group", "children_group", "region"],
+        "without_children": ["age_group", "sex", "bmi_group", "region"],
+    }
+
+    scheme_reports = {}
+    published_frames = {}
+    for name, qi in schemes.items():
+        class_sizes = df.groupby(qi)["charges"].transform("size")
+        published = df[class_sizes >= k]
+
+        smoker_diversity = published.groupby(qi)["smoker"].nunique()
+        no_diversity = smoker_diversity[smoker_diversity == 1]
+        published_class_sizes = published.groupby(qi).size()
+
+        scheme_reports[name] = {
+            "quasi_identifiers": qi,
+            "equivalence_classes": int(df.groupby(qi).ngroups),
+            "k_before_suppression": int(class_sizes.min()),
+            "suppressed_records": int((class_sizes < k).sum()),
+            "published_records": int(len(published)),
+            "published_classes": int(published.groupby(qi).ngroups),
+            "classes_without_smoker_diversity": int(len(no_diversity)),
+            "records_without_smoker_diversity": int(
+                published_class_sizes.loc[no_diversity.index].sum()
+            ),
+        }
+        published_frames[name] = published[qi + ["smoker", "charges"]]
+
+    selected = min(
+        scheme_reports, key=lambda name: scheme_reports[name]["suppressed_records"]
+    )
+    published = published_frames[selected]
+
+    report = {
+        "original_k": int(original_sizes.min()),
+        "original_unique_records": int((original_sizes == 1).sum()),
+        "schemes": scheme_reports,
+        "selected_scheme": selected,
+        "mean_charges_original": float(df["charges"].mean()),
+        "mean_charges_published": float(published["charges"].mean()),
+        "smoker_rate_original": float((df["smoker"] == "yes").mean()),
+        "smoker_rate_published": float((published["smoker"] == "yes").mean()),
+    }
+
+    submission = Path("submission")
+    submission.mkdir(parents=True, exist_ok=True)
+    (submission / "privacy_report.json").write_text(
+        json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    published.to_csv(submission / "insurance_published.csv", index=False)
+
+    return report

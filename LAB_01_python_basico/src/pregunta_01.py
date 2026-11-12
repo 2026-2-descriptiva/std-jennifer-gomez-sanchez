@@ -8,4 +8,9 @@ def pregunta_01():
         214
     """
 
-    raise NotImplementedError
+    import gzip
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    return sum(int(row[1]) for row in rows)

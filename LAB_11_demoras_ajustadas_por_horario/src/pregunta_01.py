@@ -58,4 +58,75 @@ def pregunta_01() -> tuple[pd.DataFrame, pd.DataFrame]:
         ...
     """
 
-    raise NotImplementedError
+    import os
+
+    df = pd.read_csv("data/flights_by_carrier_day_hour.csv.gz")
+    hour = "scheduled_departure_hour"
+    airline = "reporting_airline"
+    operated = "operated_flights"
+    delayed = "delayed_departure_15_flights"
+
+    # 1. Tasa nacional de demora por hora
+    hourly = df.groupby(hour)[[operated, delayed]].sum().reindex(range(24), fill_value=0)
+    hourly["delay_rate"] = hourly[delayed] / hourly[operated]
+
+    # 2. Demoras esperadas por aerolínea
+    by_carrier_hour = df.groupby([airline, hour])[[operated, delayed]].sum().reset_index()
+    by_carrier_hour["expected"] = by_carrier_hour[operated] * by_carrier_hour[hour].map(
+        hourly["delay_rate"]
+    )
+
+    carriers = by_carrier_hour.groupby(airline)[[operated, delayed, "expected"]].sum()
+    carriers = carriers[carriers[operated] >= 100_000].copy()
+    carriers["delay_rate"] = carriers[delayed] / carriers[operated]
+    carriers["expected_delayed_flights"] = carriers["expected"]
+    carriers["observed_to_expected_ratio"] = carriers[delayed] / carriers["expected"]
+    carriers["crude_rank"] = (
+        carriers["delay_rate"].rank(ascending=False, method="first").astype(int)
+    )
+    carriers["adjusted_rank"] = (
+        carriers["observed_to_expected_ratio"]
+        .rank(ascending=False, method="first")
+        .astype(int)
+    )
+
+    hourly_delay_rates = hourly.reset_index()
+    hourly_delay_rates[[operated, delayed]] = hourly_delay_rates[
+        [operated, delayed]
+    ].astype("int64")
+    hourly_delay_rates["delay_rate"] = hourly_delay_rates["delay_rate"].round(4)
+
+    carrier_adjusted_delays = (
+        carriers.reset_index()
+        .sort_values("adjusted_rank")
+        .reset_index(drop=True)[
+            [
+                airline,
+                operated,
+                delayed,
+                "delay_rate",
+                "expected_delayed_flights",
+                "observed_to_expected_ratio",
+                "crude_rank",
+                "adjusted_rank",
+            ]
+        ]
+    )
+    carrier_adjusted_delays[[operated, delayed]] = carrier_adjusted_delays[
+        [operated, delayed]
+    ].astype("int64")
+    carrier_adjusted_delays = carrier_adjusted_delays.round(
+        {
+            "delay_rate": 4,
+            "expected_delayed_flights": 4,
+            "observed_to_expected_ratio": 4,
+        }
+    )
+
+    os.makedirs("submission", exist_ok=True)
+    hourly_delay_rates.to_csv("submission/hourly_delay_rates.csv", index=False)
+    carrier_adjusted_delays.to_csv(
+        "submission/carrier_adjusted_delays.csv", index=False
+    )
+
+    return hourly_delay_rates, carrier_adjusted_delays

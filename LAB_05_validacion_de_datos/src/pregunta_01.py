@@ -48,4 +48,67 @@ def main():
         }
     """
 
-    raise NotImplementedError
+    import json
+    import re
+    from pathlib import Path
+
+    import pandas as pd
+
+    required_columns = [
+        "supplier_id",
+        "supplier",
+        "country",
+        "city",
+        "purchase_date",
+        "amount",
+        "discount",
+        "weight",
+        "units",
+        "unit_price",
+        "contact_email",
+    ]
+
+    df = pd.read_csv(
+        "data/ventas.csv.gz",
+        dtype=str,
+        keep_default_na=False,
+        encoding="utf-8-sig",
+    )
+    df.columns = [
+        re.sub(r"\s+", "_", column.replace("﻿", "").strip().lower())
+        for column in df.columns
+    ]
+
+    is_missing = df.apply(lambda column: column.str.strip().isin(["", "N/A"]))
+
+    email_pattern = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+    emails = df["contact_email"].str.strip()
+    invalid_email_count = int((~emails.apply(lambda v: bool(email_pattern.match(v)))).sum())
+
+    units = pd.to_numeric(df["units"].str.strip(), errors="coerce").dropna()
+    invalid_unit_count = int(((units <= 0) | (units % 1 != 0)).sum())
+
+    supplier_ids = df["supplier_id"].str.strip()
+
+    report = {
+        "row_count": int(len(df)),
+        "column_count": int(df.shape[1]),
+        "missing_required_columns": sorted(set(required_columns) - set(df.columns)),
+        "unexpected_columns": sorted(set(df.columns) - set(required_columns)),
+        "duplicate_row_count": int(df.duplicated().sum()),
+        "duplicate_supplier_id_row_count": int(
+            supplier_ids.duplicated(keep=False).sum()
+        ),
+        "missing_value_count_by_column": {
+            column: int(is_missing[column].sum()) for column in df.columns
+        },
+        "invalid_email_count": invalid_email_count,
+        "invalid_unit_count": invalid_unit_count,
+        "country_values": sorted(df["country"].unique().tolist()),
+    }
+
+    output = Path("submission/data_quality_report.json")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    return report

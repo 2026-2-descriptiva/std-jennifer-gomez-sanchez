@@ -9,4 +9,13 @@ def pregunta_09():
         {"aaa": 13, "bbb": 16, "ccc": 23, ...}
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import Counter
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    counts = Counter(
+        pair.split(":")[0] for row in rows for pair in row[4].split(",")
+    )
+    return dict(sorted(counts.items()))

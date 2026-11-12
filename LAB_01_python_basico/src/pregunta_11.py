@@ -10,4 +10,14 @@ def pregunta_11():
         {"a": 122, "b": 49, "c": 91, ...}
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import defaultdict
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    totals = defaultdict(int)
+    for row in rows:
+        for code in row[3].split(","):
+            totals[code] += int(row[1])
+    return dict(sorted(totals.items()))

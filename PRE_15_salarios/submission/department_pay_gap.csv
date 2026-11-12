@@ -1,0 +1,8 @@
+gerencia,departamento,employees,technical_employees,management_employees,management_share,median_salary_technical,median_salary_management,raw_gap_pct,adjusted_gap_pct,composition_effect_pct
+Comercial,Clientes menores,124,91,33,0.2661,6572902.0,13709949.0,1.0858,0.3039,0.782
+Operaciones,Operaciones,185,153,32,0.173,8412651.0,15346782.5,0.8243,0.272,0.5522
+Talento,Recursos humanos,120,90,30,0.25,8611191.5,13916947.5,0.6161,0.2632,0.353
+Finanzas,Planeación financiera,112,91,21,0.1875,8946313.0,15127063.0,0.6909,0.2291,0.4618
+Finanzas,Tesorería,130,113,17,0.1308,6246919.0,12798894.0,1.0488,0.2263,0.8225
+Operaciones,Tecnología,156,126,30,0.1923,8978689.5,15138830.0,0.6861,0.1763,0.5098
+Comercial,Clientes mayoristas,173,131,42,0.2428,9143213.0,15286344.0,0.6719,0.1654,0.5064

@@ -1,0 +1,12 @@
+trayectoria,categoria,employees,high_salary_employees,median_salary,median_experience_years,high_salary_rate,high_salary_threshold
+Directiva,Profesional,18,0,8252626.0,7.0,0.0,13280636.75
+Directiva,Especialista,46,0,10982024.5,9.0,0.0,13280636.75
+Directiva,Senior,88,83,14739106.0,12.0,0.9432,13280636.75
+Directiva,Principal,53,53,19480291.0,16.0,1.0,13280636.75
+Técnica,Analista,140,0,4182974.0,4.0,0.0,13280636.75
+Técnica,Profesional,236,0,6237535.0,6.0,0.0,13280636.75
+Técnica,Especialista,208,0,9367871.0,9.0,0.0,13280636.75
+Técnica,Senior,144,47,12836592.0,12.0,0.3264,13280636.75
+Técnica,Principal,67,67,17591979.0,16.0,1.0,13280636.75
+Directiva,Total,205,136,14632908.0,12.0,0.6634,13280636.75
+Técnica,Total,795,114,8138389.0,8.0,0.1434,13280636.75

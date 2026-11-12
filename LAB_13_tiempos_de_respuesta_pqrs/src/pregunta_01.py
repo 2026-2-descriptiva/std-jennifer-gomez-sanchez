@@ -61,4 +61,94 @@ def pregunta_01() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         ...
     """
 
-    raise NotImplementedError
+    import os
+
+    import numpy as np
+
+    frames = []
+    for channel in ("letter", "web"):
+        frame = pd.read_csv(f"data/historical_requests_{channel}.csv.gz")
+        frame = frame.drop_duplicates()
+        frame["channel"] = channel
+        frames.append(frame)
+    df = pd.concat(frames, ignore_index=True)
+
+    df["in_date"] = pd.to_datetime(df["in_date"])
+    df["out_date"] = pd.to_datetime(df["out_date"])
+    df["answered"] = df["out_date"].notna()
+    df["year"] = df["in_date"].dt.year
+
+    answered = df["answered"]
+    in_days = df["in_date"].values.astype("datetime64[D]")
+    out_days = df["out_date"].values.astype("datetime64[D]")
+
+    # Días hábiles: lunes a viernes desde el día siguiente a la entrada
+    # hasta la fecha de respuesta, incluida.
+    df["business_days"] = np.nan
+    df.loc[answered, "business_days"] = np.busday_count(
+        in_days[answered.values] + 1, out_days[answered.values] + 1
+    )
+    df["calendar_days"] = (df["out_date"] - df["in_date"]).dt.days
+    df["on_time"] = answered & (df["business_days"] <= 15)
+
+    channel_summary = (
+        df.groupby("channel")
+        .agg(
+            requests=("channel", "size"),
+            answered=("answered", "sum"),
+            median_business_days=("business_days", "median"),
+            on_time_rate=("on_time", "mean"),
+        )
+        .reset_index()
+        .sort_values("channel")
+    )
+    channel_summary["pending"] = (
+        channel_summary["requests"] - channel_summary["answered"]
+    )
+    channel_summary = channel_summary[
+        [
+            "channel",
+            "requests",
+            "answered",
+            "pending",
+            "median_business_days",
+            "on_time_rate",
+        ]
+    ].reset_index(drop=True)
+    channel_summary["on_time_rate"] = channel_summary["on_time_rate"].round(4)
+
+    yearly_summary = (
+        df.groupby(["year", "channel"])
+        .agg(
+            requests=("channel", "size"),
+            answered=("answered", "sum"),
+            on_time_rate=("on_time", "mean"),
+        )
+        .reset_index()
+        .sort_values(["year", "channel"])
+    )
+    yearly_summary["pending"] = yearly_summary["requests"] - yearly_summary["answered"]
+    yearly_summary = yearly_summary[
+        ["year", "channel", "requests", "pending", "on_time_rate"]
+    ].reset_index(drop=True)
+    yearly_summary["on_time_rate"] = yearly_summary["on_time_rate"].round(4)
+
+    week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    entry_day_summary = (
+        df.groupby("day_name")
+        .agg(
+            requests=("channel", "size"),
+            median_calendar_days=("calendar_days", "median"),
+            median_business_days=("business_days", "median"),
+        )
+        .reindex(week)
+        .rename_axis("day_name")
+        .reset_index()
+    )
+
+    os.makedirs("submission", exist_ok=True)
+    channel_summary.to_csv("submission/channel_summary.csv", index=False)
+    yearly_summary.to_csv("submission/yearly_summary.csv", index=False)
+    entry_day_summary.to_csv("submission/entry_day_summary.csv", index=False)
+
+    return channel_summary, yearly_summary, entry_day_summary

@@ -13,4 +13,15 @@ def pregunta_06():
         [("aaa", 1, 9), ("bbb", 1, 9), ...]
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import defaultdict
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    values = defaultdict(list)
+    for row in rows:
+        for pair in row[4].split(","):
+            key, value = pair.split(":")
+            values[key].append(int(value))
+    return [(key, min(vals), max(vals)) for key, vals in sorted(values.items())]

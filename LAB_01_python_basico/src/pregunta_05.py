@@ -9,4 +9,13 @@ def pregunta_05():
         [("A", 9, 2), ("B", 9, 1), ...]
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import defaultdict
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    values = defaultdict(list)
+    for row in rows:
+        values[row[0]].append(int(row[1]))
+    return [(letter, max(vals), min(vals)) for letter, vals in sorted(values.items())]

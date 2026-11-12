@@ -9,4 +9,11 @@ def pregunta_02():
         [("A", 8), ("B", 7), ("C", 5), ...]
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import Counter
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    counts = Counter(row[0] for row in rows)
+    return sorted(counts.items())

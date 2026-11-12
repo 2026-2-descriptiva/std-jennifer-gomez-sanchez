@@ -9,4 +9,13 @@ def pregunta_12():
         {"A": 177, "B": 187, "C": 114, ...}
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import defaultdict
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    totals = defaultdict(int)
+    for row in rows:
+        totals[row[0]] += sum(int(pair.split(":")[1]) for pair in row[4].split(","))
+    return dict(sorted(totals.items()))

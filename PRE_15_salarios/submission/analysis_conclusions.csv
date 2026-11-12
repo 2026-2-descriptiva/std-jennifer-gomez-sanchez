@@ -1,0 +1,8 @@
+topic,conclusion,evidence_value
+Brecha global,La mediana directiva supera a la técnica en 79.8%.,0.798
+Efecto de composición,La mayor parte de la brecha bruta por departamento se explica porque la trayectoria directiva se concentra en categorías altas; la brecha ajustada por categoría es mucho menor.,0.5697
+Brecha ajustada,"Dentro de la misma categoría, la trayectoria directiva gana en promedio 23.4% más que la técnica.",0.2337
+Departamento con mayor brecha ajustada,Clientes menores (Comercial) presenta la mayor brecha ajustada: 30.4%.,0.3039
+Acceso a salarios altos,"Proporción en el cuartil superior: técnica 14.3%, directiva 66.3%.",0.52
+Experiencia,La experiencia técnica explica buena parte del salario (r = 0.86).,0.8572
+Recomendación,"Priorizar ajustes en 4 categorías técnicas con brecha mayor a 10%; costo mensual estimado 1,211,784,324 COP.",1211784324.0

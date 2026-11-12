@@ -15,4 +15,9 @@ def pregunta_12():
         ...
     """
 
-    raise NotImplementedError
+    import pandas as pd
+
+    tbl2 = pd.read_csv("data/tbl2.tsv", sep="\t")
+    tbl2["c5"] = tbl2["c5a"].astype(str) + ":" + tbl2["c5b"].astype(str)
+    result = tbl2.groupby("c0")["c5"].apply(lambda values: ",".join(sorted(values)))
+    return result.sort_index().reset_index()

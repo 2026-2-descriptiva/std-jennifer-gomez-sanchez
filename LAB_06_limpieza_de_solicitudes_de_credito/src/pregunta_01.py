@@ -34,4 +34,61 @@ def pregunta_01():
         ...
     """
 
-    raise NotImplementedError
+    from pathlib import Path
+
+    import pandas as pd
+
+    df = pd.read_csv(
+        "data/solicitudes_de_credito.csv.gz", sep=";", index_col=0, encoding="utf-8"
+    )
+
+    text_columns = [
+        "sexo",
+        "tipo_de_emprendimiento",
+        "idea_negocio",
+        "barrio",
+        "línea_credito",
+    ]
+    for column in text_columns:
+        df[column] = (
+            df[column]
+            .str.lower()
+            .str.replace(r"[-_]", " ", regex=True)
+            .str.replace(r"\s+", " ", regex=True)
+            .str.strip()
+        )
+
+    df["monto_del_credito"] = (
+        df["monto_del_credito"]
+        .astype(str)
+        .str.strip()
+        .str.replace(r"\.00$", "", regex=True)
+        .str.replace(r"[^0-9]", "", regex=True)
+        .astype("int64")
+    )
+    df["estrato"] = df["estrato"].astype("int64")
+    df["comuna_ciudadano"] = df["comuna_ciudadano"].astype("Int64")
+
+    raw_dates = df["fecha_de_beneficio"].astype(str).str.strip()
+    dates = pd.to_datetime(raw_dates, format="%d/%m/%Y", errors="coerce")
+    dates = dates.fillna(pd.to_datetime(raw_dates, format="%Y/%m/%d", errors="coerce"))
+    df["fecha_de_beneficio"] = dates.dt.strftime("%Y-%m-%d")
+
+    required = [column for column in df.columns if column != "comuna_ciudadano"]
+    df = df.dropna(subset=required).drop_duplicates()
+
+    columns = [
+        "sexo",
+        "tipo_de_emprendimiento",
+        "idea_negocio",
+        "barrio",
+        "estrato",
+        "comuna_ciudadano",
+        "fecha_de_beneficio",
+        "monto_del_credito",
+        "línea_credito",
+    ]
+
+    output = Path("submission/solicitudes_de_credito.csv")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    df[columns].to_csv(output, sep=";", index=False)

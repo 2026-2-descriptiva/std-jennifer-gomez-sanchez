@@ -13,4 +13,8 @@ def pregunta_09():
         ...
     """
 
-    raise NotImplementedError
+    import pandas as pd
+
+    tbl0 = pd.read_csv("data/tbl0.tsv", sep="\t")
+    tbl0["year"] = tbl0["c3"].astype(str).str[:4]
+    return tbl0

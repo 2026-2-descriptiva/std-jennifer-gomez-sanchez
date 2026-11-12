@@ -13,4 +13,7 @@ def pregunta_07():
         ...
     """
 
-    raise NotImplementedError
+    import pandas as pd
+
+    tbl0 = pd.read_csv("data/tbl0.tsv", sep="\t")
+    return tbl0.groupby("c1")["c2"].sum().sort_index()

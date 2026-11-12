@@ -8,4 +8,7 @@ def pregunta_02():
         4
     """
 
-    raise NotImplementedError
+    import pandas as pd
+
+    tbl0 = pd.read_csv("data/tbl0.tsv", sep="\t")
+    return tbl0.shape[1]

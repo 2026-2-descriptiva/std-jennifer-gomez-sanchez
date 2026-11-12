@@ -11,4 +11,13 @@ def pregunta_07():
         [(0, ["C"]), (1, ["E", "B", "E"]), (2, ["A", "E"]), ...]
     """
 
-    raise NotImplementedError
+    import gzip
+    from collections import defaultdict
+
+    with gzip.open("data/data.csv.gz", "rt", encoding="utf-8") as file:
+        rows = [line.rstrip("\n").split("\t") for line in file if line.strip()]
+
+    letters = defaultdict(list)
+    for row in rows:
+        letters[int(row[1])].append(row[0])
+    return sorted(letters.items())

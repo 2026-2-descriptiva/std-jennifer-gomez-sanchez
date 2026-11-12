@@ -15,4 +15,10 @@ def pregunta_10():
         ...
     """
 
-    raise NotImplementedError
+    import pandas as pd
+
+    tbl0 = pd.read_csv("data/tbl0.tsv", sep="\t")
+    result = tbl0.groupby("c1")["c2"].apply(
+        lambda values: ":".join(str(value) for value in sorted(values))
+    )
+    return result.sort_index().to_frame(name="c2")
